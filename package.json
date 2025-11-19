@@ -1,0 +1,16 @@
+{
+  "name": "ai-agent-code-security",
+  "version": "0.1.0",
+  "description": "AI agent that uses Semgrep as a tool to review JavaScript security issues.",
+  "type": "module",
+  "scripts": {
+    "analyze": "node src/agentCore.js examples/vulnerable.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "node-fetch": "^3.3.2"
+  }
+}

@@ -1,0 +1,15 @@
+# Python venv
+venv/
+
+# Node
+node_modules/
+
+# Environment / secrets
+.env
+
+# Generated reports and traces
+reports/
+eval_trace_*.json
+
+# Misc
+.DS_Store
