@@ -1,20 +1,5 @@
 // examples/vulnerable.js
 
-// ❌ 1. Insecure HTTP server with no auth, no validation
-// const http = require("http");
-// const url = require("url");
-// const { exec } = require("child_process");
-// const fs = require("fs");
-
-// ❌ 2. Hardcoded secret API key (credential exposure)
-// const API_KEY = "sk_test_1234567890_super_secret";
-
-// Fake in-memory "DB" for demo
-// const users = [
-//   { id: 1, name: "admin", role: "admin", password: "admin123" },
-//   { id: 2, name: "alice", role: "user", password: "alice123" }
-// ];
-
 http
   .createServer((req, res) => {
     const parsed = url.parse(req.url, true);
