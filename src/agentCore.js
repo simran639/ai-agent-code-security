@@ -212,7 +212,7 @@ function buildReportPath(filePath) {
   const reportsDir = "reports";
   const baseName = path.basename(filePath).replace(/\.[^/.]+$/, ""); // e.g. vulnerable
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-"); // safe for filenames
-  const fileName = `security_report_${baseName}_${timestamp}.pdf`;
+  const fileName = `security_report_${baseName}_${timestamp}.md`;
   return { reportsDir, fullPath: path.join(reportsDir, fileName) };
 }
 
